@@ -1,0 +1,127 @@
+html{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    scroll-behavior: auto !important;
+}
+.loadingScreen {
+    z-index: 999999999999;
+    display: none;
+}
+
+.innerloading{
+    z-index: 999999999999;
+    display: none;
+}
+
+.sideBar{
+    /* width: 25%; */
+    z-index: 999;
+    left: 0px;
+    color: #f9f6f6;
+
+}
+
+.sideBar .navTab{
+    width: 250px;
+}
+
+.sideBar .navHeader{
+    width: 60px;
+    background-color: #f8f6f6;
+}
+
+.sideBar .navTab , .sideBar .navHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.sideBar .navTab .links li{
+    padding-bottom: 25px;
+    opacity: 1;
+    color: #f9f6f6;
+    font-weight: 300;
+    transition: all 1s;
+}
+
+.sideBar .navTab .navfooter .icons i{
+    transition: all 0.5s;
+}
+
+
+i , li{
+    cursor: pointer;
+}
+
+.sideBar .navTab .links li:hover , .sideBar .navTab  .navfooter .icons i:hover{
+    color:  #ff655c;
+}
+
+/* .fa-align-justify:before {
+    content: "\f039";
+} */
+
+.fa-bars{
+    width: 22px;
+    cursor: pointer;
+}
+.form-control{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #ffffff;
+    font-weight: 500;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgba(255,255,255,.7);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+::placeholder
+{
+	font-weight: 350;
+	font-size: 17px;
+	text-align: center;
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.container .films .filmsOvarlay h2{
+    font-weight: 300;
+}
+.container .films .filmsOvarlay{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: rgba(255,255,255,.7);
+    text-align: center;
+    color: #000;
+    font-weight: 450;
+    height: 100%;
+    transition: all 1s;
+}
+
+.container .films .movie:hover .filmsOvarlay{
+    top: 0;
+}
+.container .myM{
+    overflow: hidden;
+}
+
+
+.contact .alert-danger{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+}
+
+
+

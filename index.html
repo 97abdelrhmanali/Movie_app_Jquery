@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js exam</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #000000f2;">
+    <div class="loadingScreen position-absolute top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <div class="fa-5x">
+            <i class="fa-solid text-white fa-spinner fa-spin-pulse"></i>
+        </div>
+    </div>
+
+    <div class="sideBar position-fixed top-0 vh-100  d-flex bg-info">
+        <div class="navTab h-100 bg-black p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li class="position-relative cursor-pointer" id="nPlay" style="top: 0px;">Now playing</li>
+                    <li class="position-relative cursor-pointer" id="pop" style="top: 0px;">Popular</li>
+                    <li class="position-relative cursor-pointer" id="top" style="top: 0px;">Top Rated</li>
+                    <li class="position-relative cursor-pointer" id="trend" style="top: 0px;">Trending</li>
+                    <li class="position-relative cursor-pointer" id="upcome" style="top: 0px;">Upcoming</li>
+                    <li class="position-relative cursor-pointer cont" style="top: 0px;">Contact Us</li>
+                </ul>
+            </div>
+            <div class="navfooter">
+                <div class="icons text-white">
+                    <i class="fab fa-facebook-f mx-2"></i>
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                    <i class="fa-solid fa-globe mx-2"></i>
+                </div>
+                <div class="footer pt-3" style="color: #999; font-size: 15px;">
+                    <p>Copyright Â© 2019 All Rights  <br> Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="navHeader h-100  text-black py-4 px-2 text-center">
+            <div>
+                <img src="images/logo.png" class="logo" style="height: 48px;" alt="">
+            </div>    
+            <div style="font-weight: bold;">
+                <img src="images/51351.png" class="fa-bars" alt="">
+                <i class="fa fa-align-justify fa-times d-none" style="font-size: 25px; font-weight: 900 !important; font-family: 'Font Awesome 5 Free';"></i>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-globe d-block mb-3"></i>
+                <i class="fa-solid fa-share-nodes mb-2"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container pt-5 w-75 m-auto mt-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <input type="text" class="form-control mb-5 text" placeholder="get movies by word...">
+            </div>
+            <div class="col-lg-6">
+                <input type="text" maxlength="1" class="form-control char" placeholder="search...">
+            </div>
+        </div>
+
+        <div class="row films g-4 mt-2">
+            <!-- <div class="col-md-6 col-lg-4 my-3 myM  shadow">
+                <div class="position-relative movie">
+                    <div>
+                        <img src="https://image.tmdb.org/t/p/w500/kuf6dutpsT0vSVehic3EZIqkOBt.jpg" width="100%" alt="">
+                    </div>
+                    <div class="filmsOvarlay d-flex align-items-center py-5">
+                        <div class="my-5">
+                            <h2 class="mb-2">Puss in Boots: The Last Wish</h2>
+                            <p class="mb-2">Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.</p>
+                            <p class="mb-2">rated:  <span>9.5</span></p> 
+                            <p class="mb-2"></p>2022/7/15</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container py-5 w-75 m-auto mt-4">
+            <h2 style="color: #f8f9fa!important; font-weight: 300;">ContactUs...</h2>
+            <div class="row g-4 my-3">
+                <div class="col-lg-6">
+                    <input type="text" class="form-control formName" placeholder="Enter Your Name">
+                    <div class="d-none alert-danger name">Your Name is not valid</div>
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control formEmail" placeholder="Enter Email">
+                    <div class="d-none alert-danger email">entre valid email</div>
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control formPhone" placeholder="Enter Phone">
+                    <div class="d-none alert-danger phone">entre valid Phone</div>
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control formAge" placeholder="Enter Age">
+                    <div class="d-none alert-danger age">entre valid age</div>
+                </div>
+                <div class="col-lg-6">
+                    <input type="password" class="form-control formPass" placeholder="Enter Password">
+                    <div class="d-none alert-danger pass">
+                        entre valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <input type="password" class="form-control formRePass" placeholder="Enter RePassword">
+                    <div class="d-none alert-danger rePass">entre valid RePassword</div>
+                </div>
+            </div>
+            <button class="btn btn-outline-danger disabled" >Submit</button>
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+</html>
